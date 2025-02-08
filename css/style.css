@@ -160,6 +160,42 @@
     }
 }
 
+@media (max-width: 430px) {
+    .logo {
+        width: 45px !important;
+        height: 45px !important;
+      }
+
+          .company-name {
+        font-size: 15px;
+      }
+
+}
+
+@media (max-width: 370px) {
+    .logo {
+        width: 30px !important;
+        height: 30px !important;
+      }
+
+          .company-name {
+        font-size: 13px;
+        margin-right: 0%;
+      }
+
+}
+
+
+@media (max-width: 370px) {
+  .navbar-toggler {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    transform: scale(0.8);
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+
 
 /*** Header ***/
 @media (min-width: 992px) {
@@ -261,6 +297,15 @@
 
 
 /*** Property List ***/
+.extra-content {
+    display: none
+}
+
+.expandable.expanded .extra-content {
+    display: block;
+}
+
+
 .nav-pills .nav-item .btn {
     color: var(--dark);
 }
@@ -371,6 +416,13 @@
 
 
 /*** Footer ***/
+.footer .body {
+    padding: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
