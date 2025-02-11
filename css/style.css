@@ -149,6 +149,9 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
+
+        
+    
         
     }
 
@@ -160,6 +163,14 @@
     }
 }
 
+
+@media (min-width: 768px) {
+    
+          .company-name {
+        font-size: 25px !important;
+      }
+
+}
 @media (max-width: 430px) {
     .logo {
         width: 45px !important;
