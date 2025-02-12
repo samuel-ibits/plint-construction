@@ -26,18 +26,7 @@
     });
     
     
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+    
 
 
     // Header carousel
@@ -54,6 +43,18 @@
         ]
     });
 
+    // Property List
+    // Select all expandable sections and read-more links
+    document.querySelectorAll('.expandable').forEach((container, index) => {
+    const readMoreLink = container.querySelector('.read-more');
+
+    readMoreLink.addEventListener('click', () => {
+        container.classList.toggle('expanded');
+        readMoreLink.textContent = container.classList.contains('expanded') ? 'Read Less' : 'Read More';
+    });
+});
+
+    
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
